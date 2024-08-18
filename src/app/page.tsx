@@ -16,14 +16,17 @@ export default function Home() {
           <Image src="/Scooter-pana.svg" width={100} height={100} className='w-screen h-full max-w-[400px]' alt='LoginPageImage' />
         </div>
         <div className='w-full px-5 flex items-center justify-center'>
-          {session && session.user ?
+          <button className='bg-[#FF725E] text-white w-full max-w-[400px] my-6 p-3 rounded-xl' onClick={() => {
+            router.push('/Dashboard');
+          }}>Hola Amigo</button>
+          {/* {session && session.user ?
             <button className='bg-[#FF725E] text-white w-full max-w-[400px] my-6 p-3 rounded-xl' onClick={() => {
               router.push('/Dashboard');
             }}>You Are Already Login</button>
             :
             <button className='bg-[#FF725E] text-white w-full max-w-[400px] my-6 p-3 rounded-xl' onClick={() => {
               signIn();
-            }}>Login With Google</button>}
+            }}>Login With Google</button>} */}
         </div>
       </div>
     </>
